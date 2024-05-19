@@ -321,7 +321,7 @@ void updateBall(Ball *ball, unsigned int td) {
       break;
     case RIGHT:
       ball->position = ball->position + moveBy;
-      if (ball->position > PIXELS - 1)
+      if (ball->position > PIXELS)
       {
         drawLostAnimation();
         drawWinnerR();
